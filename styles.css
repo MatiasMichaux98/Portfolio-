@@ -1,0 +1,384 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, sans-serif;
+}
+
+body {
+  background-color: #0e0e10;
+  color: #d7d7d8;
+  scroll-behavior: smooth; 
+  padding-top: 60px; 
+}
+
+/* ===== LAYOUT ===== */
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* ===== SIDEBAR ===== */
+.sidebar {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 60px;
+  background:
+    linear-gradient(rgba(34, 17, 39, 0.9), rgba(32, 17, 39, 0.9)),
+    url("https://images.unsplash.com/photo-1555066931-4365d14bab8c");
+  background-size: cover;
+  background-position: center;
+  color: #f5f5f5;
+  box-shadow: 4px 0 20px rgba(0, 0, 0, 0.35);
+}
+
+/* ===== IMAGEN ===== */
+.side-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-img {
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* ===== CONTENIDO SIDEBAR ===== */
+.side-content h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.side-content h1 span {
+  color: #ffb4e6;
+}
+
+.role {
+  font-size: 1rem;
+  color: #d1c4d6;
+  margin-bottom: 28px;
+  letter-spacing: 0.5px;
+}
+
+/* ===== CONTACTOS ===== */
+.contact {
+  display: flex;
+  gap: 20px;
+}
+
+.icons-url {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 12px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.04);
+  transition: all 0.3s ease;
+}
+
+.icons-url span {
+  font-size: 0.8rem;
+  color: #ddd;
+}
+
+.icons-url i {
+  font-size: 26px;
+  color: white;
+}
+
+.icons-url:hover {
+  background: rgba(255, 255, 255, 0.12);
+  transform: translateY(-4px);
+}
+
+.icons-url:hover i {
+  transform: scale(1.15);
+}
+
+.icons-url .fa-linkedin {
+  color: #0a66c2;
+}
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #1e1e1e; /* cambia según tu estilo */
+  padding: 1rem 0;
+  z-index: 1000;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.menu a:hover {
+  color: #00aaff;  
+}
+ 
+ 
+/* ===== MAIN CONTENT ===== */
+.content {
+  background-color: #0e0e10;
+  padding: 30px 50px;
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+/* ===== SOBRE MI ===== */
+.Sobremi {
+  max-width: 700px;
+  margin: 60px auto;
+  padding: 20px;
+}
+
+.Sobremi p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+/* ===== PROJECTS ===== */
+.subtitulo {
+  text-align: center;
+  font-size: 0.95rem;
+  color: #989898;
+  margin-bottom: 15px;
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.project-card {
+  background-color: #26262c;
+  padding: 24px;
+  border-radius: 12px;
+  max-width: 800px;
+  width: 100%;
+}
+
+.project-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+}
+
+.project-description {
+  color: #cbd5f5;
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+.project-features {
+  margin: 15px 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.project-features li {
+  margin-bottom: 8px;
+  color: #cbd5f5;
+  font-size: 0.95rem;
+}
+
+.project-tech {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  color: #94a3b8;
+}
+
+.project-links {
+  margin-top: 18px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.project-links a {
+  color: #a40191;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.project-links a:hover {
+  text-decoration: underline;
+}
+
+.project-links span {
+  font-size: 0.85rem;
+  color: #94a3b8;
+}
+.btn-link {
+  background: #26262C;
+  border: 2px solid rgb(122, 6, 139);
+  border-radius: 6px;
+  padding: 8px 14px;
+  cursor: pointer;
+}
+.btn-link:hover{
+  box-shadow:
+    inset 0px -6px 18px -6px rgb(20, 3, 20),
+    inset 0px 6px 18px -6px rgb(19, 3, 20),
+    inset 12px 0px 12px -6px rgba(17, 3, 20, 0),
+    inset -12px 0px 12px -6px rgba(17, 3, 20, 0),
+    -1px -1px 6px 0px rgb(163, 22, 179);
+}
+.btn-link a {
+  color: #ffffff;
+  font-size: 0.9rem;
+}
+.btn-link a:hover{
+  text-decoration: none;
+}
+/* ===== SKILLS ===== */
+.skills {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 15px;
+}
+
+.divs {
+  background-color: #26262c;
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.divs h1 {
+  font-size: 1rem;
+}
+
+.caja {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6px;
+  border-radius: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-icon img {
+  width: 30px;
+  height: 30px;
+}
+
+.card-icon span {
+  font-size: 0.7rem;
+  margin-top: 4px;
+}
+
+.card-icon:hover {
+  transform: scale(1.25);
+  box-shadow: 0 0 15px #d508f0;
+}
+
+/* ===== RESPONSIVE ===== */
+
+/* Tablets y mobile */
+@media (max-width: 768px) {
+
+  .sidebar {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .profile-img {
+    width: 140px;
+    height: 140px;
+  }
+
+  .side-content h1 {
+    font-size: 1.6rem;
+  }
+
+  .contact {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .content {
+    padding: 25px 20px;
+  }
+
+  .Sobremi {
+    margin: 40px auto;
+    padding: 0;
+  }
+
+  .project-card {
+    padding: 20px;
+  }
+}
+
+/* Mobile chico */
+@media (max-width: 480px) {
+
+  .side-content h1 {
+    font-size: 1.4rem;
+  }
+
+  .role {
+    font-size: 0.85rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  .project-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .card-icon img {
+    width: 26px;
+    height: 26px;
+  }
+}

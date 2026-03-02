@@ -1,1 +1,246 @@
-<h1>hola</h1>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Backend Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+</head>
+<body>
+
+  <div class="layout">
+   
+  
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="side-img">
+        <img src="https://avatars.githubusercontent.com/MatiasMichaux98" alt="Foto de perfil" class="profile-img">
+      </div>
+    
+      <div class="side-content">
+        <h1>¡Hola! soy <span>Matias Michaux</span></h1>
+        <p class="role">Desarrollador Backend</p>
+    
+        <div class="contact">
+          <a href="https://github.com/MatiasMichaux98" target="_blank" class="icons-url">
+            <i class="fa-brands fa-github"></i>
+            <span>GitHub</span>
+          </a>
+    
+          <a href="https://www.linkedin.com/in/matiasmichaux/" target="_blank" class="icons-url">
+            <i class="fa-brands fa-linkedin"></i>
+            <span>LinkedIn</span>
+          </a>
+         
+          <a href="docs/CV_MatiasMichaux .pdf" download="CV_MatiasMichaux" class="icons-url">
+            <i class="fa-solid fa-file"></i>
+            <span>Descargar Curriculum</span>
+          </a>
+        </div>
+      </div>
+      
+    </aside>
+    <nav class="menu">
+      <ul>
+        <li><a href="#sobremi">Sobre mí</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#tecnologias">Tecnologías</a></li>
+      </ul>
+    </nav>
+    <!-- Main -->
+    <main class="content">
+
+      <section class="Sobremi"  id="sobremi">
+        <h2>Sobre mí</h2>
+        <p>
+          Soy Técnico en Programación, con un  enfoque
+          en el desarrollo backend y la construcción de APIs. Actualmente me encuentro
+          en la búsqueda de mi primera oportunidad profesional en el área IT, donde
+          pueda aplicar mis conocimientos y seguir creciendo como desarrollador backend.
+        </p>
+        <p>
+          Me considero una persona responsable, curiosa y con ganas de aprender.
+          Busco mejorar constantemente mis habilidades en backend y aplicar buenas
+          prácticas en los proyectos en los que participo.
+        </p>
+      </section>
+
+      <section  id="proyectos">
+        <h2>Proyectos</h2>
+        <p class="subtitulo">Selección de algunos de mis proyectos de práctica y personales, desarrollados con C# y el ecosistema .NET.</p>
+        <section class="projects">
+            <article class="project-card">
+              <h3>Sistema de Reservas – API Backend</h3>
+          
+              <p class="project-description">
+                API REST desarrollada en ASP.NET Core (.NET 8) para la gestión de reservas de peliculas, salas, horarios y asientos, aplicando principios de Clean Architecture y buenas prácticas
+                de diseño para sistemas backend escalables y mantenibles.
+              </p>
+          
+              <ul class="project-features">
+                <li>✔ Clean Architecture (Application, Domain, Infrastructure, API)</li>
+                <li>✔ ASP.NET Core sobre .NET 8</li>
+                <li>✔ Autenticación y autorización con JWT</li>
+                <li>✔ Refresh Token persistido y enviado mediante cookies HTTP-only</li>
+                <li>✔ ASP.NET Identity para gestión de usuarios y roles</li>
+                <li>✔ Control de acceso basado en roles (RBAC)</li>
+                <li>✔ Entity Framework Core con SQL Server</li>
+                <li>✔ Patrón Repository y Services</li>
+                <li>✔ Manejo global de excepciones mediante middleware</li>
+                <li>✔ Background Services para expiración automática de reservas</li>
+                <li>✔ Seed inicial de usuarios y roles</li>
+                <li>✔ Documentación interactiva con Swagger (Bearer JWT)</li>
+                <li>✔ Unit Tests implementados (en proceso de integración)</li>
+                <li>✔ Docker y Docker Compose para entorno de desarrollo (API + SQL Server)</li>
+              </ul>
+          
+              <p class="project-tech">
+                Tecnologías: ASP.NET Core (.NET 8) · Entity Framework Core · SQL Server ·
+                JWT · ASP.NET Identity · Clean Architecture · Swagger
+              </p>
+          
+              <div class="project-links">
+               <button class="btn-link">
+                <a href="https://github.com/MatiasMichaux98/ReservationBack" target="_blank">
+                  Ver Proyecto
+                </a>
+               </button>
+                <span>Swagger: /swagger</span>
+              </div>
+            </article>
+          </section>
+
+          <section class="projects">
+         
+            <article class="project-card">
+              <h3>E-commerce Backend – API REST</h3>
+          
+              <p class="project-description">
+                Backend REST desarrollado en ASP.NET Core (.NET 8) para una plataforma
+                de comercio electrónico. Provee funcionalidades completas de gestión
+                de usuarios, productos, categorías y carrito de compras, con autenticación
+                y autorización segura mediante JWT y ASP.NET Identity.
+              </p>
+          
+              <p class="project-description">
+                El sistema está diseñado con una arquitectura desacoplada basada en
+                servicios, utilizando Entity Framework Core para la persistencia de datos
+                en SQL Server. Incluye integración con Mercado Pago para la gestión de pagos,
+                manejo global de excepciones mediante middleware y documentación interactiva
+                con Swagger.
+              </p>
+          
+              <ul class="project-features">
+                <li>✔ ASP.NET Core sobre .NET 8</li>
+                <li>✔ API REST para E-commerce (usuarios, productos, categorías y carrito)</li>
+                <li>✔ Autenticación y autorización con JWT</li>
+                <li>✔ ASP.NET Identity para gestión de usuarios y roles</li>
+                <li>✔ Control de acceso basado en roles (RBAC)</li>
+                <li>✔ Entity Framework Core con SQL Server</li>
+                <li>✔ Arquitectura basada en Services y separación de responsabilidades</li>
+                <li>✔ AutoMapper para mapeo de DTOs</li>
+                <li>✔ Middleware para manejo global de excepciones</li>
+                <li>✔ Seed inicial de usuarios y roles</li>
+                <li>✔ Integración con Mercado Pago para procesamiento de pagos</li>
+                <li>✔ Documentación interactiva con Swagger (JWT Bearer)</li>
+                <li>✔ Docker y Docker Compose para entorno de desarrollo (API + SQL Server)</li>
+              </ul>
+          
+              <div class="project-links">
+                <button class="btn-link">
+                  <a href="https://github.com/MatiasMichaux98/E-commerceBack" target="_blank">
+                    Ver Proyecto
+                  </a>
+                </button>
+               
+                <span>Swagger: /swagger</span>
+              </div>
+            </article>
+          </section>
+      </section>
+
+      <section id="tecnologias">
+        <h2>Tecnologías</h2>
+        <p class="subtitulo">Herramientas y lenguajes que utilizo en mis proyectos</p>
+        <div class="skills">
+            
+            <div class="divs">
+                <h1>Front-End</h1>
+               <div class="caja" >
+                <div class="card-icon">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" /> 
+                  <span>HTML</span>
+                </div>
+                <div class="card-icon">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
+                  <span>CSS</span>
+                </div>
+                <div class="card-icon">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" />
+                  <span>TAILWINDCSS</span>
+                </div>
+                <div class="card-icon">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+                  <span>JAVASCRIPT</span>
+                </div>
+               </div>
+            </div>
+            <div class="divs">
+                <h1 class="Titulo">Back-End</h1>
+                <div class="caja" >
+                  <div class="card-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dotnetcore/dotnetcore-original.svg" />
+                    <span>.NET</span>
+                  </div>
+                  <div class="card-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" />
+                    <span>C#</span>
+                  </div>
+                  <div class="card-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" />
+                    <span>JAVA</span>
+                  </div>
+                </div>
+            </div> 
+            <div class="divs">
+                <h1 class="Titulo">Herramientas y Bases de datos</h1>
+                <div class="caja"  >
+                  <div class="card-icon"> 
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" />
+                    <span>GIT</span>
+                  </div>
+                  <div class="card-icon"> 
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" />
+                    <span>GITHUB</span>
+                  </div>
+                  <div class="card-icon"> 
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg" />
+                    <span>MMYSQL</span>
+                  </div>
+                  <div class="card-icon"> 
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original-wordmark.svg" />
+                    <span>POSTGRESQL</span>
+                  </div>
+                  <div class="card-icon"> 
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg" />
+                    <span>POSTMAN</span>
+                  </div>
+                  <div class="card-icon"> 
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original-wordmark.svg" />
+                    <span>DOCKER</span>
+                  </div>
+
+                </div>
+            </div>
+        </div>
+      </section>
+
+    </main>
+
+  </div>
+
+</body>
+</html>
